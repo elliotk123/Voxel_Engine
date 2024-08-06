@@ -5,16 +5,15 @@
 int main()
 {
     Graphics_Io Graphics_Interface;
-    __int8* Voxels = new  __int8[32768];
-    for (int i = 0; i < 32768; i++) {
+    __int8* Voxels = new  __int8[2*2097152];//32768];
+    for (int i = 0; i < 2*2097152; i++) {
         Voxels[i] = 0;
     }
 
-    int Count = 0;
     int Voxel = 0;
 
     //timing 
-    const long period_ms = 1000;
+    const long period_ms = 20;
     std::chrono::milliseconds elapsed_milliseconds;
     auto start = std::chrono::steady_clock::now();
     auto end = std::chrono::steady_clock::now();
@@ -29,7 +28,6 @@ int main()
             Graphics_Interface.Send_Voxels(Voxels);
             Graphics_Interface.Update_Screen();
             Voxels[Voxel] = (__int8)0;
-            Count = 0;
             Voxel++;
         }
         end = std::chrono::steady_clock::now();

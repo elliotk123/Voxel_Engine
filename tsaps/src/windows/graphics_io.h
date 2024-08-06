@@ -3,6 +3,7 @@
 #include <glm/glm.hpp>
 #include <GLFW/glfw3.h> 
 #include <basetsd.h>
+#include <vertex_array.h>
 
 class Graphics_Io : public Graphics_Io_Base {
 public:
@@ -12,10 +13,9 @@ public:
 	void Send_Voxels(__int8* Voxels);
 	bool Get_Window_Should_Close();
 private:
-	GLFWwindow* window;
-	unsigned int shaderProgram, VAO, VBO;
-	__int16* vertices;
-	int Voxel_Count;
-	GLint projectionLoc;
+	GLFWwindow* mp_window;
+	unsigned int m_shaderProgram, m_VAO, m_VBO;
+	VertexArray* mp_vertexArray;
+	int m_Voxel_Count;
 
 };
