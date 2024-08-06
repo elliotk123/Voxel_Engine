@@ -3,7 +3,7 @@ project(Tsaps)
 add_library(Tsaps 
 "src/core/graphics_io_base.h" 
 "src/${TARG}/graphics_io.h" 
-"src/${TARG}/graphics_io.cpp")
+"src/${TARG}/graphics_io.cpp" "src/core/vertex_array.cpp")
 #"src/core/user_io_base.h"
 #"src/${TARG}/user_io.h"
 #"src/${TARG}/user_io.cpp")
