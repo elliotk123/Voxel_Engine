@@ -234,56 +234,6 @@ void Graphics_Io::Send_Voxels(__int8* Voxels_Out) {
                 mp_vertexArray->addValues(int16_mid + Step_X_Behind * (X - Voxels_X / 2), int16_mid + Step_Y_Behind * (Y - Voxels_Y / 2)); // bottom left 
                 mp_vertexArray->addValues(int16_mid + Step_X * (X - Voxels_X / 2), int16_mid + Step_Y * (Y - Voxels_Y / 2)); // top left
             }
-            ////TOP
-            ////1
-            //vertices[(90 * (Vertex_Counter - 1))+54] = int16_min + Step_X * i;
-            //vertices[(90 * (Vertex_Counter - 1))+55] = int16_min + Step_Y * (j + 1);
-            //vertices[(90 * (Vertex_Counter - 1))+56] = int16_min + Step_Z * (k+1);
-            ////2
-            //vertices[(90 * (Vertex_Counter - 1))+57] = int16_min + Step_X * (i + 1);
-            //vertices[(90 * (Vertex_Counter - 1))+58] = int16_min + Step_Y * (j + 1);
-            //vertices[(90 * (Vertex_Counter - 1))+59] = int16_min + Step_Z * (k + 1);
-            ////3
-            //vertices[(90 * (Vertex_Counter - 1))+60] = int16_min + Step_X * (i + 1);
-            //vertices[(90 * (Vertex_Counter - 1))+61] = int16_min + Step_Y * (j+1);
-            //vertices[(90 * (Vertex_Counter - 1))+62] = int16_min + Step_Z * k;
-            ////3
-            //vertices[(90 * (Vertex_Counter - 1))+63] = int16_min + Step_X * (i + 1);
-            //vertices[(90 * (Vertex_Counter - 1))+64] = int16_min + Step_Y * (j+1);
-            //vertices[(90 * (Vertex_Counter - 1))+65] = int16_min + Step_Z * k;
-            ////4
-            //vertices[(90 * (Vertex_Counter - 1))+66] = int16_min + Step_X * i;
-            //vertices[(90 * (Vertex_Counter - 1))+67] = int16_min + Step_Y * (j+1);
-            //vertices[(90 * (Vertex_Counter - 1))+68] = int16_min + Step_Z * k;
-            ////1
-            //vertices[(90 * (Vertex_Counter - 1))+69] = int16_min + Step_X * i;
-            //vertices[(90 * (Vertex_Counter - 1))+70] = int16_min + Step_Y * (j + 1);
-            //vertices[(90 * (Vertex_Counter - 1))+71] = int16_min + Step_Z * (k+1);
-            ////BOTTOM
-            ////1
-            //vertices[(90 * (Vertex_Counter - 1))+72] = int16_min + Step_X * i;
-            //vertices[(90 * (Vertex_Counter - 1))+73] = int16_min + Step_Y * j;
-            //vertices[(90 * (Vertex_Counter - 1))+74] = int16_min + Step_Z * k;
-            ////2
-            //vertices[(90 * (Vertex_Counter - 1))+75] = int16_min + Step_X * (i + 1);
-            //vertices[(90 * (Vertex_Counter - 1))+76] = int16_min + Step_Y * j;
-            //vertices[(90 * (Vertex_Counter - 1))+77] = int16_min + Step_Z * k;
-            ////3
-            //vertices[(90 * (Vertex_Counter - 1))+78] = int16_min + Step_X * (i + 1);
-            //vertices[(90 * (Vertex_Counter - 1))+79] = int16_min + Step_Y * j;
-            //vertices[(90 * (Vertex_Counter - 1))+80] = int16_min + Step_Z * (k+1);
-            ////3
-            //vertices[(90 * (Vertex_Counter - 1))+81] = int16_min + Step_X * (i + 1);
-            //vertices[(90 * (Vertex_Counter - 1))+82] = int16_min + Step_Y * j;
-            //vertices[(90 * (Vertex_Counter - 1))+83] = int16_min + Step_Z * (k+1);
-            ////4
-            //vertices[(90 * (Vertex_Counter - 1))+84] = int16_min + Step_X * i;
-            //vertices[(90 * (Vertex_Counter - 1))+85] = int16_min + Step_Y * j;
-            //vertices[(90 * (Vertex_Counter - 1))+86] = int16_min + Step_Z * (k+1);
-            ////1
-            //vertices[(90 * (Vertex_Counter - 1))+87] = int16_min + Step_X * i;
-            //vertices[(90 * (Vertex_Counter - 1))+88] = int16_min + Step_Y * j;
-            //vertices[(90 * (Vertex_Counter - 1))+89] = int16_min + Step_Z * k;
         }
     }
 }
